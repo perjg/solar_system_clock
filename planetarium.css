@@ -1,0 +1,158 @@
+/*
+ * Solar System Clock
+ * Copyright (c) 2006, Per Johan Groland
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ *
+ *     * Redistributions of source code must retain the above copyright
+ *       notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above copyright
+ *       notice, this list of conditions and the following disclaimer in the
+ *       documentation and/or other materials provided with the distribution.
+ *     * Neither the name of the University of California, Berkeley nor the
+ *       names of its contributors may be used to endorse or promote products
+ *       derived from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND ANY
+ * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE REGENTS AND CONTRIBUTORS BE LIABLE FOR ANY
+ * DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */
+
+body {
+  width: 260px;
+  height: 220px;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana;
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+}
+
+div.canvas {
+  width: 250px;
+  height: 200px;
+  top: 5px;
+  left: 5px;
+  /*border:1px solid #444;  */
+  position: absolute;
+  background: transparent;
+}
+
+div.digitalwatch {
+  width: 260px;
+  top: 150px;
+  left: 10px;
+  position: absolute;
+}
+
+div.calendar {
+  width: 260px;
+  top: 32px;
+  left: 0px;
+  position: absolute;
+}
+
+div.settingsbuttons {
+  width: 250px;
+  top: 5px;
+  left: 5px;
+  /*border:1px solid #444;  */
+  position: absolute;
+  background: transparent;
+}
+
+div.info {
+  width: 260px;
+  top: 5px;
+  left: 0px;
+  position: absolute;
+  background: transparent;
+  font: 10pt sans-serif;
+}
+
+div.settings {
+  width: 260px;
+  top: 85px;
+  left: 60px;
+  position: absolute;
+  background: transparent;
+  font: 10pt sans-serif;
+}
+
+#back {
+  display: none;
+}
+
+.configButton {
+  opacity: 0.1;
+  position: absolute;
+  top: 2px;
+  right: 35px;
+  width: 15px;
+  height: 15px;
+  background: transparent url("images/configbutton15px.png") no-repeat;
+  z-index: 30;	
+}
+
+.closeButton {
+  opacity: 0.1;
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  background: transparent url("images/closebutton15px.png") no-repeat;
+  z-index: 30;	
+}
+
+/* common settings for all elements belonging to the button class */
+.button:hover {
+  background-position: 0 50%;
+  opacity: 1.0;
+}
+
+.button:active {
+  opacity: 1.0;
+  background-position: 0 100%;
+}
+
+body:hover .button {
+  opacity: 1.0;
+}
+
+body:hover .flipbutton {
+  opacity: 0.3;
+}
+
+body .flipbutton:hover {
+  opacity: 1.0;
+}
+
+body .flipbutton:active {
+  opacity: 1.0;
+  background-position: bottom left;	
+}
+
+.flipbutton {
+  opacity: 0.1;
+  overflow: hidden;
+  height: 16px;
+  width: 24px;
+  position: absolute;
+  background: transparent url(images/flip.png) scroll no-repeat 0 0;
+  background-position: top left;
+  top: 90px;
+  left: 60px;
+  margin: 0;
+  padding: 0;
+  z-index: 30;
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<widget network="public">
+  <widgetname>Solar System Clock</widgetname>
+  <description>
+    A Digital Clock with a solar system animation
+  </description>
+  <icon>icon.png</icon>
+  <width>280</width>
+  <height>240</height>
+  <author>
+    <name>Per Johan Groland</name>
+    <email>jm@jugglemaster.net</email>
+    <link>http://jugglemaster.net</link>
+    <organization>Per Johan Groland</organization>
+  </author>
+  <id>
+    <host>my.opera.com</host>
+    <name>Solar System Clock</name>
+    <revised>2006-10-23</revised>
+  </id>
+</widget>
